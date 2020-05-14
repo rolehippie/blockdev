@@ -1,0 +1,11 @@
+# Standards: 0.1
+---
+# @var blockdev_definitions:description: List of block devices to manipulate
+# @var blockdev_definitions:example: >
+# blockdev_definitions:
+#   - device: /dev/vdb
+#     ra: 32
+# @end
+blockdev_definitions: []
+
+...
