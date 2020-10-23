@@ -1,7 +1,7 @@
 ---
 repository:
   name: blockdev
-  description: Ansible role for blockdev
+  description: Ansible role to configure readahead values for disks
   topics: ansible, role, ansible-role
 
   private: false
