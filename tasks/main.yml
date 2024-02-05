@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Detect general readahead
   loop: "{{ blockdev_definitions }}"

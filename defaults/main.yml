@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 # @var blockdev_definitions:description: List of block devices to manipulate
 # @var blockdev_definitions:example: >
