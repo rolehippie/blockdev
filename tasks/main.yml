@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Detect general readahead
   loop: "{{ blockdev_definitions }}"
@@ -7,7 +6,7 @@
   when: item.ra | default(False)
   register: blockdev_getra
   changed_when: False
-  command: "blockdev --getra {{ item.device }}"
+  ansible.builtin.command: "blockdev --getra {{ item.device }}"
   tags:
     - blockdev
 
@@ -17,7 +16,7 @@
     label: "{{ item.item.device }}"
   when: not item.skipped | default(False)
   changed_when: item.stdout | trim != item.item.ra | string
-  command: "blockdev --setra {{ item.item.ra }} {{ item.item.device }}"
+  ansible.builtin.command: "blockdev --setra {{ item.item.ra }} {{ item.item.device }}"
   tags:
     - blockdev
 
@@ -28,7 +27,7 @@
   when: item.fra | default(False)
   register: blockdev_getfra
   changed_when: False
-  command: "blockdev --getfra {{ item.device }}"
+  ansible.builtin.command: "blockdev --getfra {{ item.device }}"
   tags:
     - blockdev
 
@@ -38,7 +37,7 @@
     label: "{{ item.item.device }}"
   when: not item.skipped | default(False)
   changed_when: item.stdout | trim != item.item.fra | string
-  command: "blockdev --setfra {{ item.item.fra }} {{ item.item.device }}"
+  ansible.builtin.command: "blockdev --setfra {{ item.item.fra }} {{ item.item.device }}"
   tags:
     - blockdev
 
