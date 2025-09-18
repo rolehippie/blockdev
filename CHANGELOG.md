@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/blockdev/compare/v2.0.0...v2.1.0) (2025-09-18)
+
+
+### Features
+
+* apply new repo structure and update linting ([b8da5a0](https://github.com/rolehippie/blockdev/commit/b8da5a0c84a03df57294fad3925bb3f5d4f8b327))
+
 ## [2.0.0](https://github.com/rolehippie/blockdev/compare/v1.1.0...v2.0.0) (2024-02-12)
 
 
