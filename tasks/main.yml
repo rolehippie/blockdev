@@ -3,9 +3,10 @@
   loop: "{{ blockdev_definitions }}"
   loop_control:
     label: "{{ item.device }}"
-  when: item.ra | default(False)
+  when:
+    - false if item.ra is not defined else (item.ra | length > 0)
   register: blockdev_getra
-  changed_when: False
+  changed_when: false
   ansible.builtin.command: "blockdev --getra {{ item.device }}"
   tags:
     - blockdev
@@ -14,7 +15,8 @@
   loop: "{{ blockdev_getra.results }}"
   loop_control:
     label: "{{ item.item.device }}"
-  when: not item.skipped | default(False)
+  when:
+    - trie if item.skipped is not defined else (not item.skipped)
   changed_when: item.stdout | trim != item.item.ra | string
   ansible.builtin.command: "blockdev --setra {{ item.item.ra }} {{ item.item.device }}"
   tags:
@@ -24,9 +26,10 @@
   loop: "{{ blockdev_definitions }}"
   loop_control:
     label: "{{ item.device }}"
-  when: item.fra | default(False)
+  when:
+    - false if item.fra is not defined else (item.fra | length > 0)
   register: blockdev_getfra
-  changed_when: False
+  changed_when: false
   ansible.builtin.command: "blockdev --getfra {{ item.device }}"
   tags:
     - blockdev
@@ -35,7 +38,8 @@
   loop: "{{ blockdev_getfra.results }}"
   loop_control:
     label: "{{ item.item.device }}"
-  when: not item.skipped | default(False)
+  when:
+    - trie if item.skipped is not defined else (not item.skipped)
   changed_when: item.stdout | trim != item.item.fra | string
   ansible.builtin.command: "blockdev --setfra {{ item.item.fra }} {{ item.item.device }}"
   tags:
