@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/blockdev/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#55](https://github.com/rolehippie/blockdev/issues/55)) ([926d21c](https://github.com/rolehippie/blockdev/commit/926d21c7d8a6859d0580f2ce23ecb01da948da7d))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#53](https://github.com/rolehippie/blockdev/issues/53)) ([cac05da](https://github.com/rolehippie/blockdev/commit/cac05da8f88cfb7aa6e28eb4c3092aad11495bf0))
+* **patch:** update dependency pre-commit to v4.6.2 ([#54](https://github.com/rolehippie/blockdev/issues/54)) ([2d35b5d](https://github.com/rolehippie/blockdev/commit/2d35b5d911eca2e30b07881551df307cfe6934ce))
+
 ## [2.3.0](https://github.com/rolehippie/blockdev/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
