@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.0](https://github.com/rolehippie/blockdev/compare/v2.4.0...v2.5.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#56](https://github.com/rolehippie/blockdev/issues/56)) ([1afd474](https://github.com/rolehippie/blockdev/commit/1afd4749eeb08041e0dbade8edbba7a5a0644c06))
+
 ## [2.4.0](https://github.com/rolehippie/blockdev/compare/v2.3.0...v2.4.0) (2026-08-17)
 
 ### Dependencies
