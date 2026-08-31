@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.1](https://github.com/rolehippie/blockdev/compare/v2.5.0...v2.5.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#57](https://github.com/rolehippie/blockdev/issues/57)) ([b2a60a3](https://github.com/rolehippie/blockdev/commit/b2a60a331c16e5184dc4c4d6a61af57eafec84f1))
+
 ## [2.5.0](https://github.com/rolehippie/blockdev/compare/v2.4.0...v2.5.0) (2026-08-24)
 
 ### Dependencies
