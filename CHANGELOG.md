@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.0](https://github.com/rolehippie/blockdev/compare/v2.5.1...v2.6.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([a189d06](https://github.com/rolehippie/blockdev/commit/a189d067d136d7eeb7f770c6c687f269330d0e1c))
+
 ## [2.5.1](https://github.com/rolehippie/blockdev/compare/v2.5.0...v2.5.1) (2026-08-31)
 
 ### Dependencies
